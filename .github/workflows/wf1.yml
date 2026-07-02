@@ -8,4 +8,7 @@ jobs:
     steps:
       - name: Hello World
         run: echo "wf1 created"
-  
+      - name: Copy Code
+        uses: actions/checkout@v6
+      - name: List Repo Files
+        run: ls -la
